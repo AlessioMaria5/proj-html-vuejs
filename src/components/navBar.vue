@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import NavbarList from './navbar/navbarList.vue';
+import NavbarList from './navbarList.vue';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 
 export default {

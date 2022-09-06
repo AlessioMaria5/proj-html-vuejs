@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@mixin myflex($type: 'ver'){
+
+    display: flex;
+    gap: 20px;
+
+    @if $type == 'ver' {
+        align-items: center;
+    } @else if $type == 'hor' {
+        justify-content: center;
+
+    } @else if $type == 'both' {
+
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@mixin navList ($type: 'noStyle') {
+
+    list-style: none;
+    text-decoration: none;
+
+    a:hover {
+        color: black;
+    }
+}

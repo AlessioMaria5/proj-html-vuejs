@@ -1,0 +1,23 @@
+@mixin styleBtn($type: 'classic'){
+
+    text-decoration: none;
+
+    @if $type == 'classic'{
+
+        color: #ffff;
+        background-color: #40c4ff;
+        padding: 15px 25px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+
+    } @else if $type == 'secondary' {
+
+        color: #CECECE;
+        background-color: #ffff;
+        border: 1px solid grey;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+}
