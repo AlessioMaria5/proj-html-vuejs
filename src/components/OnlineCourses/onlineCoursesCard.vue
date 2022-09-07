@@ -31,6 +31,7 @@ export default {
   .card {
     border: 0.1px solid $primary_border;  
     width: calc(100% / 3);
+    background-color: white;
     
 
     hgroup {
