@@ -4,18 +4,31 @@
     box-sizing: border-box;
 }
 
+
+// BRAND COLORS
+$primary_color: #40c4ff;
+$secondary_color: #FFD23E;
+
+
+// BACKGROUNDS 
 $primary_bg: #0707071a;
 $secondary_bg: #F0F7FC;
 $third_bg: #FCFBFB;
 
-$primary_color: #40c4ff;
+//BORDERS
+$primary_border: #eaefea;
 
+
+//TITLE AND FONTS
 $primary_font: #5e5e60;
 $secondary_font: #bcb7b7;
 
 $primary_title: #303030;
 
-$primary_border: #eaefea;
+
+
+
+
 
 
 @mixin myflex($type: 'ver'){
@@ -43,4 +56,41 @@ $primary_border: #eaefea;
     a:hover {
         color: black;
     }
+}
+
+@mixin priceLabel ($type: 'primary') {
+
+    font-size: 0.8em;
+    position:absolute;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+
+    @if $type == 'secondary' {
+
+        background-color: $secondary_color;
+    }
+
+    @if $type == 'primary' {
+
+        background-color: $primary_color;
+    }
+}
+
+@mixin backgrounds($type: 'primary') {
+
+   @if $type == 'primary' {
+
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    top:0px;
+    bottom:0;
+    left:-100px;
+    right:-100px;
+
+   } content:"";
 }
