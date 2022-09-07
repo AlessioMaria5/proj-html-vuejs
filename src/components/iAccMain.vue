@@ -7,8 +7,7 @@
       <IAccLearning />
       <OnlineCourses />
       <PriceTable />
-      <div class="pricing-plans">Pricing Plans</div>
-      <div class="sponsor">Sponsor</div>
+      <IAccSponsor />
 
   </div>
 </template>
@@ -21,9 +20,10 @@ import IAccTestimonials from './Testimonials/iAccTestimonials.vue';
 import IAccLearning from './iAccLearning.vue';
 import OnlineCourses from './OnlineCourses/onlineCourses.vue';
 import PriceTable from './OnlineCourses/PriceTable/PriceTable.vue';
+import IAccSponsor from './iAccSponsor.vue';
 export default {
     name: "iAccMain",
-    components: { IAccCards, IAccBlog, SloganEmp, IAccTestimonials, IAccLearning, OnlineCourses, PriceTable }
+    components: { IAccCards, IAccBlog, SloganEmp, IAccTestimonials, IAccLearning, OnlineCourses, PriceTable, IAccSponsor }
 }
 </script>
 

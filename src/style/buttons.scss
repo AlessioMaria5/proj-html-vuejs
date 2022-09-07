@@ -6,16 +6,17 @@
 
         color: #ffff;
         background-color: #40c4ff;
-        padding: 15px 25px;
+        padding: 10px;
+        border: none;
         text-transform: uppercase;
         font-size: 0.8em;
 
     } @else if $type == 'secondary' {
 
-        color: #CECECE;
+        color: $primary_font;
         background-color: #ffff;
-        border: 1px solid grey;
-        padding: 10px;
+        border: 1px solid $primary_border;
+        padding: 9px;
         text-transform: uppercase;
         font-size: 0.8em;
     }
