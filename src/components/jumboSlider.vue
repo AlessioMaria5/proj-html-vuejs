@@ -1,5 +1,6 @@
 <template>
   <div class="jumboSlider">
+    
         <hgroup>
           <h1>Contemporary Ideas</h1>
           <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta tenetur nemo</div>
@@ -9,8 +10,9 @@
 </template>
 
 <script>
+ 
 export default {
-
+    components: { }
 }
 </script>
 
@@ -19,6 +21,7 @@ export default {
     @import '../style/buttons.scss';
 
     .jumboSlider {
+      position:relative;
         @include myflex('both');
         position:relative;
         flex-direction: column;
