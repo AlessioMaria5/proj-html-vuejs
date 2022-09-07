@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+$primary_bg: #0707071a;
+$secondary_bg: #F0F7FC;
+$third_bg: #FCFBFB;
+
+$primary_color: #40c4ff;
+
+$primary_font: #5e5e60;
+$secondary_font: #bcb7b7;
+
+$primary_title: #303030;
+
+$primary_border: #eaefea;
+
 
 @mixin myflex($type: 'ver'){
 

@@ -28,6 +28,8 @@ export default {
     .header::before {
             content:"";
             background-image: url('../assets/img/course-9-f-img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             position: absolute;
             opacity: 1;
             z-index: -1;
