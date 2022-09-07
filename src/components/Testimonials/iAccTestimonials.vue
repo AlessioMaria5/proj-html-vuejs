@@ -8,12 +8,14 @@
           <h3 class="testimonialName">Joan Collins</h3>
           <h4 class="testimonialRole">Student</h4>
       </hgroup>
+      <SliderSpot />
   </div>
 </template>
 
 <script>
+import SliderSpot from '../sliderSpot.vue';
 export default {
-
+    components: { SliderSpot }
 }
 </script>
 

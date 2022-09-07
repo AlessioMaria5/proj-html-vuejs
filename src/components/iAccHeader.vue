@@ -2,16 +2,17 @@
   <div class="header">
       <NavBar />
       <JumboSlider />
-      
+      <SliderSpot />
   </div>
 </template>
 
 <script>
 import NavBar from './navBar.vue';
 import JumboSlider from './jumboSlider.vue';
+import SliderSpot from './sliderSpot.vue';
 export default {
     name: "iAccHeader",
-    components: { NavBar, JumboSlider }
+    components: { NavBar, JumboSlider, SliderSpot }
 }
 </script>
 
