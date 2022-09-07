@@ -4,6 +4,9 @@
     <IAccMain />
     <IAccFooter />
     
+    <library />
+    <fas />
+    <FontAwesomeIcon />
   </div>
 </template>
 
@@ -11,6 +14,9 @@
 import IAccFooter from './components/iAccFooter.vue';
 import IAccHeader from './components/iAccHeader.vue';
 import IAccMain from './components/iAccMain.vue';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fas} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 
 
@@ -21,12 +27,14 @@ export default {
     IAccFooter,
     IAccHeader,
     IAccMain,
+    fas,
+    library,
+    FontAwesomeIcon,
     
 }
 }
 </script>
 
 <style lang="scss">
-
 
 </style>

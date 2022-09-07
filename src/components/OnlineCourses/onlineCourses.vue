@@ -66,15 +66,15 @@ export default {
 
             content:"";
             background-image: url('../../assets/img/page-background-img.png');
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
             position: absolute;
             opacity: 1;
             z-index: -1;
             top:0px;
             bottom:0;
-            left:-100px;
-            right:-100px;
+            left:0;
+            right:0;
         }
         
         h1 {

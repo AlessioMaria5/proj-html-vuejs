@@ -1,5 +1,6 @@
 <template>
     <div class="slogan">
+        <GoTop />
         <div class="img-wrapper">
             <img src="../../assets/img/h5-img-2.jpg">
         </div>
@@ -24,8 +25,9 @@
 </template>
 
 <script>
+import GoTop from '../goTop.vue';
 export default {
-
+    components: { GoTop }
 }
 </script>
 
@@ -36,6 +38,7 @@ export default {
         @include myflex('both');
         padding: 40px 0px;
         padding-bottom: 40px;
+        position: relative;
        
 
         .img-wrapper {

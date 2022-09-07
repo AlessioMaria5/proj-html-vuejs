@@ -1,5 +1,6 @@
 <template>
   <div class="Learning">
+    <GoTop />
       <div class="content-table">
         <ul>
             <!-- Acquisiti i dati degli altri elementi è possibile rendere il contenuto dinamico -->
@@ -31,37 +32,38 @@
 </template>
 
 <script>
+import GoTop from './goTop.vue';
 export default {
     data() {
         return {
             iAccLearn: [
                 {
-                    tableTitle: 'What we do',
-                    sideTitle: 'Learning Possibilities',
-                    description: 'lorem30',
+                    tableTitle: "What we do",
+                    sideTitle: "Learning Possibilities",
+                    description: "lorem30",
                     checkList: [
                         {
-                            check: 'yes',
-                            item: 'We enrich lives through learning'
+                            check: "yes",
+                            item: "We enrich lives through learning"
                         },
                         {
-                            check: 'yes',
-                            item: 'Maximizing potential trough individual attention.'
+                            check: "yes",
+                            item: "Maximizing potential trough individual attention."
                         },
                         {
-                            check: 'yes',
-                            item: 'The trusted name for specialized training'
+                            check: "yes",
+                            item: "The trusted name for specialized training"
                         },
                         {
-                            check: 'yes',
-                            item: 'People teach. People learn. This is where they connect.'
+                            check: "yes",
+                            item: "People teach. People learn. This is where they connect."
                         }
-
                     ]
                 }
             ]
-        }
-    }
+        };
+    },
+    components: { GoTop }
 }
 </script>
 
@@ -72,6 +74,8 @@ export default {
         @include myflex('hor');
         align-items: flex-end;
         padding: 50px;
+        position: relative;
+
         .content-table {
 
                 ul {

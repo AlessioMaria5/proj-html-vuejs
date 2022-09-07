@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-
+    <GoTop />
     <div class="mainFooter">
       <div class="info">
         <div class="logo-wrapper">
@@ -70,8 +70,9 @@
 </template>
 
 <script>
+import GoTop from './goTop.vue';
 export default {
-
+    components: { GoTop }
 }
 </script>
 
@@ -79,6 +80,7 @@ export default {
   @import '../style/main.scss';
   #footer {
     background-color: #1F1F1F;
+    position: relative;
     
 
     h1,h2,h3,h4 {

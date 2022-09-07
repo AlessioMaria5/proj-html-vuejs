@@ -1,5 +1,6 @@
 <template>
   <div class="priceTable">
+      <ShopLabel />
     <h1>Pricing Plans</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit</p>
 
@@ -28,12 +29,12 @@
             </li> 
             <li>2</li>
             <li>15 Days</li>
-            <li>Web Designing</li>
-            <li>Human-Centered Design</li>
-            <li>Basic Marketing</li>
-            <li>Python for everybody</li>
-            <li>Android Developer</li>
-            <li>Business English</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li>X</li>
+            <li>X</li>
+            <li>X</li>
+            <li>X</li>
             <li class="list-btn"><a href="#">GET IT KNOW</a></li>
         </ul>
 
@@ -47,12 +48,12 @@
             </li> 
             <li>4</li>
             <li>30 Days</li>
-            <li>Web Designing</li>
-            <li>Human-Centered Design</li>
-            <li>Basic Marketing</li>
-            <li>Python for everybody</li>
-            <li>Android Developer</li>
-            <li>Business English</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li>X</li>
+            <li>X</li>
             <li class="list-btn"><a href="#">GET IT KNOW</a></li>
         </ul>
 
@@ -66,12 +67,12 @@
             </li>  
             <li>6</li>
             <li>30 Days</li>
-            <li>Web Designing</li>
-            <li>Human-Centered Design</li>
-            <li>Basic Marketing</li>
-            <li>Python for everybody</li>
-            <li>Android Developer</li>
-            <li>Business English</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
+            <li class="check">✔</li>
             <li class="list-btn"><a href="#">GET IT KNOW</a></li>
         </ul>
       </div>
@@ -79,8 +80,10 @@
 </template>
 
 <script>
-export default {
+import ShopLabel from '@/components/shopLabel.vue';
 
+export default {
+    components: { ShopLabel }
 }
 </script>
 
@@ -92,6 +95,7 @@ export default {
         text-align: center;
         padding-top: 50px;
         padding-bottom: 50px;
+        position: relative;
 
 
         &::before {
@@ -135,7 +139,9 @@ export default {
             }
             }
             
-            
+            .check {
+                color: $primary_color;
+            }
            
             ul {
 
